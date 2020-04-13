@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&family=Cinzel&display=swap');
+
+.intro{
+    font-family: 'Baloo Da 2', cursive;
+    text-align: center;
+    padding: 20px;
+    font-size: large;
+}
+.brand{
+    font-family: 'Cinzel', sans-serif;
+    padding: 10px;
+    font-size: large;
+}
+.navbar-nav{
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 15px;
+}
+.header{
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.menu-item{
+    padding: 10px;
+}
+.logo-img{
+    margin-top: 120px;
+}
+/*  #292e33 
+    #dedad6
+*/
