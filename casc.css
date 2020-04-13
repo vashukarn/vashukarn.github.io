@@ -12,8 +12,7 @@
     font-size: large;
 }
 .navbar-nav{
-    font-family: 'Baloo Da 2', cursive;
-    font-size: 15px;
+    
 }
 .header{
     padding-bottom: 15px;
@@ -21,6 +20,11 @@
 }
 .menu-item{
     padding: 10px;
+    /* align-items: center; */
+    /* padding-left: 10px; */
+    text-align: center;
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 15px;
 }
 .logo-img{
     margin-top: 120px;
@@ -28,3 +32,10 @@
 /*  #292e33 
     #dedad6
 */
+.footer-copyright{
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 15px;
+}
+.talk{
+    padding: 10px;
+}
