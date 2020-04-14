@@ -3,7 +3,7 @@
 .intro{
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    padding: 10px;
+    padding: 10px;  
     font-weight: 800;
     color: #343a40;
     margin-top: 80px;
@@ -72,7 +72,7 @@
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-weight: 800;
-    padding: 10px;
+    padding: 20px;
     color: #343a40;
     font-size: x-large;
     padding-top: 30px;
@@ -85,4 +85,11 @@
     color: #343a40;
     font-size: large;
     padding-bottom: 40px;
+}
+.card{
+    padding: 20px;
+}
+.about{
+    margin-left: 300px;
+    margin-right: 300px;
 }
