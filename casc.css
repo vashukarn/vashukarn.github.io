@@ -1,95 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Montserrat:wght@400;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Montserrat:wght@400;800&display=swap");
 
-.intro{
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    padding: 10px;  
-    font-weight: 800;
-    color: #343a40;
-    margin-top: 80px;
-    font-size: xx-large;
+a {
+  text-decoration: none;
 }
-.introco{
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    font-weight: 400;
-    padding: 10px;
-    color: #343a40;
-    font-size: large;
+
+.intro {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  padding: 10px;
+  font-weight: 800;
+  color: #343a40;
+  margin-top: 80px;
+  font-size: xx-large;
 }
-.brand{
-    font-family: 'Cinzel', sans-serif;
-    padding: 10px;
-    font-size: large;
+.introco {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  padding: 10px;
+  color: #343a40;
+  font-size: large;
 }
-.header{
-    padding-bottom: 15px;
-    padding-top: 15px;
+.brand {
+  font-family: "Cinzel", sans-serif;
+  padding: 10px;
+  font-size: large;
 }
-.menu-item{
-    padding: 10px;
-    /* align-items: center; */
-    /* padding-left: 10px; */
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+.header {
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
-.logo-img{
-    padding: 25px;
+.menu-item {
+  padding: 10px;
+  /* align-items: center; */
+  /* padding-left: 10px; */
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+.logo-img {
+  padding: 25px;
 }
 /*  #292e33 
     #dedad6
 */
-.footer-copyright{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+.footer-copyright {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
 }
-.talk{
-    padding: 10px;
+.talk {
+  padding: 10px;
 }
-.pass-img{
-    margin-top: 40px;
+.pass-img {
+  margin-top: 40px;
 }
-.tadahead{
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    font-weight: 800;
-    padding: 10px;
-    color: #ffffff;
-    font-size: x-large;
-    padding-top: 30px;
+.tadahead {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-weight: 800;
+  padding: 10px;
+  color: #ffffff;
+  font-size: x-large;
+  padding-top: 30px;
 }
-.tadabody{
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    font-weight: 300;
-    padding: 10px;
-    color: #ffffff;
-    font-size: large;
-    padding-bottom: 40px;
+.tadabody {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-weight: 300;
+  padding: 10px;
+  color: #ffffff;
+  font-size: large;
+  padding-bottom: 40px;
 }
-.abouthead{
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    font-weight: 800;
-    padding: 20px;
-    color: #343a40;
-    font-size: x-large;
-    padding-top: 30px;
+.abouthead {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-weight: 800;
+  padding: 20px;
+  color: #343a40;
+  font-size: x-large;
+  padding-top: 30px;
 }
-.aboutbody{
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    font-weight: 300;
-    padding: 10px;
-    color: #343a40;
-    font-size: large;
-    padding-bottom: 40px;
+.aboutbody {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-weight: 300;
+  padding: 10px;
+  color: #343a40;
+  font-size: large;
+  padding-bottom: 40px;
 }
-.card{
-    padding: 20px;
+.card {
+  padding: 20px;
 }
-.about{
-    margin-left: 300px;
-    margin-right: 300px;
+.about {
+  margin-left: 300px;
+  margin-right: 300px;
 }
+
+/* <div class="card">
+        <div class="card-header" id="headingYalo">
+          <h2 class="mb-0">
+            <button
+              class="btn btn-link text-dark collapsed"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseYalo"
+              aria-expanded="false"
+              aria-controls="collapseYalo"
+            >
+              Collapsible Group Item #3
+            </button>
+          </h2>
+        </div>
+        <div
+          id="collapseYalo"
+          class="collapse"
+          aria-labelledby="headingYalo"
+          data-parent="#accordion"
+        >
+          <div class="card-body">
+            Maybe you have heard about these job titles in the past, but what
+            exactly is the difference between them? Some people claim that it
+            mostly depends on your education and on what you have achieved; in
+            some way, this may be true, but some others claim that sometimes the
+            company you are working for decides if you are a programmer, a
+            developer or other, making it merely a job title. Let’s take a
+            closer look at this.
+          </div>
+        </div>
+      </div> */

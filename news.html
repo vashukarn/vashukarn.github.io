@@ -3,7 +3,7 @@
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
     <meta content="utf-8" http-equiv="encoding" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Home | Vashu Karn</title>
+    <title>Facts | Vashu Karn</title>
     <link rel="stylesheet" href="casc.css" />
     <link rel="shortcut icon" href="top-logo.png" />
     <link
@@ -28,6 +28,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
     <!-- Navbar Starts -->
     <div class="header">
@@ -50,9 +51,7 @@
           <div class="mx-auto">
             <div class="navbar-nav">
               <div class="menu-item">
-                <a class="nav-item nav-link active" href="index.html"
-                  >Home <span class="sr-only">(current)</span></a
-                >
+                <a class="nav-item nav-link" href="index.html">Home</a>
               </div>
               <div class="menu-item">
                 <a class="nav-item nav-link" href="about.html">About</a>
@@ -66,7 +65,9 @@
                 >
               </div>
               <div class="menu-item">
-                <a class="nav-item nav-link" href="news.html">News</a>
+                <a class="nav-item nav-link active" href="news.html"
+                  >News<span class="sr-only">(current)</span></a
+                >
               </div>
             </div>
           </div>
@@ -81,8 +82,10 @@
       </nav>
     </div>
     <!-- Navbar Ends -->
-    <div class="intro">Programmer, Designer & Developer</div>
-    <div class="introco">Simplicity is prerequisite for reliability</div>
+    <div class="intro">News and Facts</div>
+    <div class="introco">
+      Links of news and facts for better understanding and learning.
+    </div>
     <div class="logo-img">
       <img
         src="logo.png"
@@ -90,23 +93,82 @@
         alt="Vashu Karn"
       />
     </div>
-    <div class="pass-img">
-      <img
-        src="pass.png"
-        class="img-fluid width:50% mx-auto d-block"
-        alt="Vashu Karn"
-      />
-    </div>
-    <div class="container-fluid bg-dark">
-      <div class="tadahead">Hi, I’m Vashu. Nice to meet you.</div>
-      <div class="tadabody">
-        Since beginning my journey as a coder nearly 3 years ago, I've done
-        remote work for NGOs, consulted for startups, and collaborated with
-        talented people to create digital products for both business and
-        consumer use. I'm quietly confident, naturally curious, and perpetually
-        working on improving my chops one problem at a time.
-        <a href="about.html"> More ..</a>
+    <div class="abouthead">Links:</div>
+
+    <!-- Accordion -->
+
+    <div class="accordion" id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button
+              class="topic btn btn-link text-dark"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              Difference Between Programmer, Developer, Software Engineer and
+              Coder
+            </button>
+          </h2>
+        </div>
+
+        <div
+          id="collapseOne"
+          class="collapse show"
+          aria-labelledby="headingOne"
+          data-parent="#accordion"
+        >
+          <div class="card-body">
+            Maybe you have heard about these job titles in the past, but what
+            exactly is the difference between them? Some people claim that it
+            mostly depends on your education and on what you have achieved; in
+            some way, this may be true, but some others claim that sometimes the
+            company you are working for decides if you are a programmer, a
+            developer or other, making it merely a job title. Let’s take a
+            closer look at this.
+            <a
+              href="https://www.technotification.com/2017/06/coder-programmer-developer-difference.html"
+              >More</a
+            >
+          </div>
+        </div>
       </div>
+
+      <!-- <div class="card">
+        <div class="card-header" id="headingYalo">
+          <h2 class="mb-0">
+            <button
+              class="btn btn-link text-dark collapsed"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapseYalo"
+              aria-expanded="false"
+              aria-controls="collapseYalo"
+            >
+              Collapsible Group Item #3
+            </button>
+          </h2>
+        </div>
+        <div
+          id="collapseYalo"
+          class="collapse"
+          aria-labelledby="headingYalo"
+          data-parent="#accordion"
+        >
+          <div class="card-body">
+            Maybe you have heard about these job titles in the past, but what
+            exactly is the difference between them? Some people claim that it
+            mostly depends on your education and on what you have achieved; in
+            some way, this may be true, but some others claim that sometimes the
+            company you are working for decides if you are a programmer, a
+            developer or other, making it merely a job title. Let’s take a
+            closer look at this.
+          </div>
+        </div>
+      </div> -->
     </div>
 
     <footer>
