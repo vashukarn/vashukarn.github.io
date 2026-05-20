@@ -1,0 +1,49 @@
+name: IndexNow
+
+# Pings IndexNow so Bing (and partners that consume it — Yandex, Naver,
+# Seznam) re-crawl the site within minutes of a push instead of hours/days.
+# Google ignores IndexNow; submit URLs in Google Search Console instead.
+
+on:
+  push:
+    branches: [master]
+    # Only fire when something user-visible changed.
+    paths:
+      - 'index.html'
+      - 'style.css'
+      - 'js/**'
+      - 'img/**'
+      - 'sitemap.xml'
+      - 'robots.txt'
+      - 'CNAME'
+  workflow_dispatch:    # also allow manual runs from the Actions tab
+
+# Don't queue duplicate runs if you push twice in quick succession.
+concurrency:
+  group: indexnow
+  cancel-in-progress: true
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for GitHub Pages to deploy
+        # Pages usually publishes within ~60s of a push; give it some headroom
+        # so IndexNow doesn't crawl the previous version.
+        run: sleep 90
+
+      - name: Ping IndexNow
+        run: |
+          curl --fail --show-error --silent \
+            -X POST "https://api.indexnow.org/IndexNow" \
+            -H "Content-Type: application/json; charset=utf-8" \
+            -d '{
+              "host": "vijaykarn.com.np",
+              "key": "87ade994724c485b435de6d32bfb38d8",
+              "keyLocation": "https://vijaykarn.com.np/87ade994724c485b435de6d32bfb38d8.txt",
+              "urlList": [
+                "https://vijaykarn.com.np/"
+              ]
+            }'
+          echo
+          echo "✓ IndexNow ping accepted"
