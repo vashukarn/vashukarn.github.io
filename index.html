@@ -98,6 +98,107 @@
     }
     </script>
 
+    <!-- JSON-LD: ProfessionalService -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Vashu Karn — Senior Full Stack Engineering",
+      "description": "Senior Full Stack Engineering services — architecture, Laravel + Livewire backends, Flutter mobile apps, IoT integrations, payments, and DevOps.",
+      "url": "https://vijaykarn.com.np/",
+      "image": "https://vijaykarn.com.np/img/og-cover.svg",
+      "telephone": "+91-7070675425",
+      "email": "karnvashu@gmail.com",
+      "priceRange": "$$",
+      "areaServed": [
+        { "@type": "Place", "name": "Worldwide (Remote)" },
+        { "@type": "Country", "name": "Nepal" },
+        { "@type": "Country", "name": "India" }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kathmandu",
+        "addressCountry": "Nepal"
+      },
+      "provider": {
+        "@type": "Person",
+        "name": "Vijay Ranjan Karn"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Engineering Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Architecture & Backend (Laravel, Livewire, microservices)" }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Cross-platform Mobile (Flutter)" }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "IoT & Real-time systems (MQTT, Ably, Pusher)" }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "DevOps & Observability" }
+          }
+        ]
+      }
+    }
+    </script>
+
+    <!-- JSON-LD: FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Are you available for remote roles?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. I'm based in Kathmandu, Nepal and work fully remote — currently with a US team at Imaginovation. I keep flexible hours and overlap several hours daily with US Eastern, European, and Indian time zones."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's your primary stack?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PHP/Laravel (including Livewire 4) on the backend, Flutter for cross-platform mobile, and the surrounding ecosystem — MySQL/PostgreSQL, Redis, Typesense, Docker, AWS, Firebase, Stripe/Razorpay/Khalti, MQTT for IoT, and Sentry/Pulse/Horizon for observability."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you take on freelance or contract work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "I take selective contract engagements alongside my full-time role, typically for architecture reviews, greenfield backend or mobile builds, payments/IoT integrations, or fractional tech lead work. Email karnvashu@gmail.com with the scope."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Have you led engineering teams?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. I led a 10-engineer team at Uptechsys delivering a real-estate trading platform, and held Technical Head responsibilities at Alltechlabs covering architecture, code review, hiring input, and technology selection across multiple microservices."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What kind of projects interest you most?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Roles where I can own a senior IC track or a small high-leverage team, work on systems that touch real users, and keep the production loop tight. Bonus if there's hardware, payments, or genuine scale involved — e-commerce, healthcare, IoT, and real-time platforms are where my work has landed so far."
+          }
+        }
+      ]
+    }
+    </script>
+
     <!-- JSON-LD: BreadcrumbList -->
     <script type="application/ld+json">
     {
@@ -137,6 +238,7 @@
           <a href="#services">Services</a>
           <a href="#projects">Projects</a>
           <a href="#stack">Stack</a>
+          <a href="#faq">FAQ</a>
           <a href="#contact">Contact</a>
           <a href="Vijay_Karn_Resume.pdf" download class="nav__links-resume">Resume ↓</a>
         </nav>
@@ -946,6 +1048,74 @@
               <h3>Process &amp; Business</h3>
               <p>Agile with Atlassian Jira · Foundations of Digital Marketing &amp; E-commerce. (Udemy, Coursera — 2022-2024)</p>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== FAQ ========== -->
+      <section class="section faq" id="faq" aria-labelledby="faq-title">
+        <div class="container">
+          <div class="section__head section__head--split">
+            <span class="section__tag">···· FAQ ····</span>
+            <h2 id="faq-title" class="section__title">
+              The questions<br/>I get <em>most often</em>.
+            </h2>
+            <p class="section__sub">
+              Before you write, here's the short answer to the things people
+              usually ask first.
+            </p>
+          </div>
+
+          <div class="faq__list">
+            <details class="faq__item">
+              <summary>
+                <span>Are you available for remote roles?</span>
+                <span class="faq__icon" aria-hidden="true">+</span>
+              </summary>
+              <div class="faq__answer">
+                <p>Yes. I'm based in Kathmandu, Nepal and work fully remote — currently with a US team at Imaginovation. I keep flexible hours and overlap several hours daily with US Eastern, European, and Indian time zones.</p>
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary>
+                <span>What's your primary stack?</span>
+                <span class="faq__icon" aria-hidden="true">+</span>
+              </summary>
+              <div class="faq__answer">
+                <p>PHP/Laravel (including Livewire 4) on the backend, Flutter for cross-platform mobile, and the surrounding ecosystem — MySQL/PostgreSQL, Redis, Typesense, Docker, AWS, Firebase, Stripe/Razorpay/Khalti, MQTT for IoT, and Sentry/Pulse/Horizon for observability.</p>
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary>
+                <span>Do you take on freelance or contract work?</span>
+                <span class="faq__icon" aria-hidden="true">+</span>
+              </summary>
+              <div class="faq__answer">
+                <p>I take selective contract engagements alongside my full-time role, typically for architecture reviews, greenfield backend or mobile builds, payments/IoT integrations, or fractional tech-lead work. Email <a href="mailto:karnvashu@gmail.com">karnvashu@gmail.com</a> with the scope.</p>
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary>
+                <span>Have you led engineering teams?</span>
+                <span class="faq__icon" aria-hidden="true">+</span>
+              </summary>
+              <div class="faq__answer">
+                <p>Yes. I led a 10-engineer team at Uptechsys delivering a real-estate trading platform, and held Technical Head responsibilities at Alltechlabs covering architecture, code review, hiring input, and technology selection across multiple microservices.</p>
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary>
+                <span>What kind of projects interest you most?</span>
+                <span class="faq__icon" aria-hidden="true">+</span>
+              </summary>
+              <div class="faq__answer">
+                <p>Roles where I can own a senior IC track or a small high-leverage team, work on systems that touch real users, and keep the production loop tight. Bonus if there's hardware, payments, or genuine scale involved — e-commerce, healthcare, IoT, and real-time platforms are where my work has landed so far.</p>
+              </div>
+            </details>
           </div>
         </div>
       </section>
