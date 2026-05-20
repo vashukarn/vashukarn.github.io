@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vashukarn.github.io/sitemap.xml

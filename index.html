@@ -1,372 +1,1043 @@
 <!DOCTYPE html>
-<html class="no-js" lang="">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Vashu Karn | Portfolio</title>
-    <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- favicon icon -->
-    <link rel="icon" href="img/favicon.png" />
+    <meta name="theme-color" content="#0a0a0a" />
 
-    <!-- All CSS Files Here -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/et-line-fonts.css" />
-    <link rel="stylesheet" href="css/ionicons.min.css" />
-    <link rel="stylesheet" href="css/magnific-popup.css" />
-    <link rel="stylesheet" href="css/meanmenu.css" />
-    <link rel="stylesheet" href="css/global.css" />
+    <title>Vashu Karn — Senior Full Stack Engineer | Laravel &amp; Flutter</title>
+
+    <meta name="description" content="Vijay 'Vashu' Karn — Senior Full Stack Engineer with 6+ years building production systems in PHP/Laravel, Flutter, microservices, IoT, and ONDC. Based in Kathmandu, Nepal." />
+    <meta name="author" content="Vijay Ranjan Karn" />
+    <meta name="keywords" content="Vashu Karn, Vijay Karn, Vijay Ranjan Karn, Senior Full Stack Engineer Nepal, Laravel developer, Flutter developer, Livewire, PHP developer Kathmandu, microservices, ONDC, MQTT IoT, hire full stack engineer" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="googlebot" content="index, follow" />
+
+    <link rel="canonical" href="https://vashukarn.github.io/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vashukarn.github.io/" />
+    <meta property="og:site_name" content="Vashu Karn — Portfolio" />
+    <meta property="og:title" content="Vashu Karn — Senior Full Stack Engineer" />
+    <meta property="og:description" content="6+ years architecting and shipping production systems across e-commerce, healthcare, IoT, and real-time platforms. PHP/Laravel · Flutter · Microservices." />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://vashukarn.github.io/img/og-cover.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Vashu Karn — Senior Full Stack Engineer" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Vashu Karn — Senior Full Stack Engineer" />
+    <meta name="twitter:description" content="6+ years building production PHP/Laravel, Flutter, and IoT systems. Based in Kathmandu, Nepal." />
+    <meta name="twitter:image" content="https://vashukarn.github.io/img/og-cover.svg" />
+
+    <link rel="icon" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <!-- JSON-LD: Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Vijay Ranjan Karn",
+      "alternateName": ["Vashu Karn", "Vijay Karn"],
+      "jobTitle": "Senior Full Stack Engineer",
+      "description": "Senior Full Stack Engineer with 6+ years architecting and shipping production systems across e-commerce, healthcare, IoT, and real-time platforms.",
+      "email": "mailto:karnvashu@gmail.com",
+      "telephone": "+91-7070675425",
+      "url": "https://vashukarn.github.io",
+      "image": "https://vashukarn.github.io/img/og-cover.svg",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kathmandu",
+        "addressCountry": "Nepal"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Sanskriti University",
+        "department": "Computer Science and Engineering"
+      },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Imaginovation"
+      },
+      "knowsAbout": [
+        "PHP", "Laravel", "Livewire", "Flutter", "Dart", "Python", "Django",
+        "Node.js", "Next.js", "Microservices", "REST APIs", "ONDC",
+        "AWS", "GCP", "Firebase", "Docker", "MQTT",
+        "MySQL", "PostgreSQL", "Redis", "MongoDB", "Typesense",
+        "Stripe", "Razorpay", "Khalti", "Ably", "Pusher"
+      ],
+      "sameAs": [
+        "https://github.com/vashukarn",
+        "https://www.linkedin.com/in/karnvashu/"
+      ]
+    }
+    </script>
+
+    <!-- JSON-LD: WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Vashu Karn — Portfolio",
+      "url": "https://vashukarn.github.io/",
+      "author": {
+        "@type": "Person",
+        "name": "Vijay Ranjan Karn"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home",     "item": "https://vashukarn.github.io/#top" },
+        { "@type": "ListItem", "position": 2, "name": "About",    "item": "https://vashukarn.github.io/#about" },
+        { "@type": "ListItem", "position": 3, "name": "Work",     "item": "https://vashukarn.github.io/#work" },
+        { "@type": "ListItem", "position": 4, "name": "Projects", "item": "https://vashukarn.github.io/#projects" },
+        { "@type": "ListItem", "position": 5, "name": "Contact",  "item": "https://vashukarn.github.io/#contact" }
+      ]
+    }
+    </script>
   </head>
   <body>
-    <!--[if lt IE 8]>
-      <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
-        your experience.
-      </p>
-    <![endif]-->
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Add your site or application content here -->
-    <!-- PRELOADER -->
-    <div class="page-loader">
-      <div class="loader">Loading...</div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <div class="preloader" id="preloader">
+      <div class="preloader__inner">
+        <span class="preloader__name">Vashu Karn</span>
+        <span class="preloader__progress" id="preloaderProgress">0%</span>
+      </div>
     </div>
-    <!-- /PRELOADER -->
-    <!-- header start -->
-    <header id="sticky-header">
-      <div class="header-area">
-        <div class="container sm-100">
-          <div class="row">
-            <div class="col-md-3 col-sm-2">
-              <div class="logo text-upper">
-                <h4><a href="index.html">Vashu</a></h4>
-              </div>
-            </div>
-          </div>
+
+    <header class="nav" id="nav">
+      <div class="container nav__inner">
+        <a href="#top" class="nav__logo" aria-label="Vashu Karn — home">
+          <span class="nav__logo-dot"></span>
+          <span>VK<span class="nav__logo-slash">/</span>Studio</span>
+        </a>
+        <nav class="nav__links" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#stack">Stack</a>
+          <a href="#contact">Contact</a>
+          <a href="Vijay_Karn_Resume.pdf" download class="nav__links-resume">Resume ↓</a>
+        </nav>
+        <div class="nav__cta-group">
+          <a href="Vijay_Karn_Resume.pdf" download class="nav__cta nav__cta--ghost" aria-label="Download résumé (PDF)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>
+            <span>Resume</span>
+          </a>
+          <a href="#contact" class="nav__cta">
+            <span>Let's talk</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+          </a>
         </div>
+        <button class="nav__burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
       </div>
     </header>
-    <!-- header end -->
 
-    <!-- basic-slider start -->
-    <div
-      class="ptb-150 border-t-b"
-      style="background-image: url(img/bg/MainBanner.png)"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="slider-content">
-              <h2>Howdy, I'm Vashu Karn</h2>
-              <p>
-                A Full Stack Developer here existing in this metamorphical green
-                and blue bubble. Aiming to delivery products with my
-                capabilities which could help mankind.
-              </p>
-              <a class="btn" href="#">Get Resume</a>
+    <main id="main">
+      <a id="top" tabindex="-1" aria-hidden="true"></a>
+
+      <!-- ========== HERO ========== -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero__inner">
+          <div class="hero__meta-row">
+            <div class="hero__meta">
+              <span class="dot"></span>
+              <span>Web &amp; Mobile Development</span>
+            </div>
+            <div class="hero__meta hero__meta--right">
+              <span>Portfolio · v2026</span>
+              <span class="dot"></span>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <!-- basic-slider end -->
-    <!-- basic-portfolio-area start -->
-    <div class="basic-portfolio-area ptb-90">
-      <div class="container">
-        <div class="filter-menu text-center mb-40">
-          <button class="active" data-filter="*">ALL</button>
-          <button data-filter=".laravel">Laravel</button>
-          <button data-filter=".python">Python Selenium</button>
-          <button data-filter=".android">Android (Java)</button>
-        </div>
-        <div id="portfolio-grid" class="row-portfolio portfolio-style-2">
-          <div class="portfolio-item laravel">
-            <div class="portfolio-wrapper">
-              <div class="portfolio-thumb">
-                <img src="img/portfolio/nepalestate.png" alt="" />
-              </div>
-              <div class="portfolio-caption text-left">
-                <h4>
-                  <a href="https://nepalestate.com/" rel="nofollow">Nepal Estate Solutions</a>
-                </h4>
-                <div class="work-tag">
-                  <p>Real Estate Trading Platform</p>
-                </div>
-              </div>
+
+          <h1 class="hero__title" id="hero-title">
+            <span class="hero__line">
+              <span class="hero__word hero__word--serif">Senior</span>
+              <span class="hero__word">Full-stack</span>
+            </span>
+            <span class="hero__line hero__line--right">
+              <span class="hero__word hero__word--outline">Engineer</span>
+            </span>
+          </h1>
+
+          <div class="hero__bottom">
+            <div class="hero__signature">
+              <span class="hero__sig-label">— Vijay "Vashu" Karn</span>
+              <span class="hero__sig-sub">Kathmandu, Nepal · Open to remote roles worldwide</span>
             </div>
-          </div>
-          <div class="portfolio-item laravel">
-            <div class="portfolio-wrapper">
-              <div class="portfolio-thumb">
-                <img src="img/portfolio/lions.png" alt="" />
-              </div>
-              <div class="portfolio-caption text-left">
-                <h4>
-                  <a href="https://lckbloodhood.org/" rel="nofollow">LCK Bloodhood</a>
-                </h4>
-                <div class="work-tag">
-                  <p>Portfolio Website</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item laravel">
-            <div class="portfolio-wrapper">
-              <div class="portfolio-thumb">
-                <img src="img/portfolio/dk.png" alt="" />
-              </div>
-              <div class="portfolio-caption text-left">
-                <h4>
-                  <a href="https://dkdhungana.com/" rel="nofollow">DK Dhungana</a>
-                </h4>
-                <div class="work-tag">
-                  <p>Portfolio Website</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item laravel">
-            <div class="portfolio-wrapper">
-              <div class="portfolio-thumb">
-                <img src="img/portfolio/ajschool.png" alt="" />
-              </div>
-              <div class="portfolio-caption text-left">
-                <h4>
-                  <a href="https://ajschool.org/" rel="nofollow">Annal Jyoti</a>
-                </h4>
-                <div class="work-tag">
-                  <p>Portfolio Website</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item laravel">
-            <div class="portfolio-wrapper">
-              <div class="portfolio-thumb">
-                <img src="img/portfolio/subhimart.png" alt="" />
-              </div>
-              <div class="portfolio-caption text-left">
-                <h4>
-                  <a href="https://subhimart.com/" rel="nofollow">Subhi Mart</a>
-                </h4>
-                <div class="work-tag">
-                  <p>Ecommerce</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item laravel">
-            <div class="portfolio-wrapper">
-              <div class="portfolio-thumb">
-                <img src="img/portfolio/karnarogyam.png" alt="" />
-              </div>
-              <div class="portfolio-caption text-left">
-                <h4>
-                  <a href="https://karnarogyam.com/" rel="nofollow"
-                    >Karnarogyam</a
-                  >
-                </h4>
-                <div class="work-tag">
-                  <p>Hearing Aid Admin Panel & API</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item laravel">
-            <div class="portfolio-wrapper">
-              <div class="portfolio-thumb">
-                <img src="img/portfolio/ePeepal.png" alt="" />
-              </div>
-              <div class="portfolio-caption text-left">
-                <h4>
-                  <a href="https://www.epeepal.com/" rel="nofollow">ePeepal</a>
-                </h4>
-                <div class="work-tag">
-                  <p>Ecommerce</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item laravel">
-            <div class="portfolio-wrapper">
-              <div class="portfolio-thumb">
-                <img src="img/portfolio/easykart.png" alt="" />
-              </div>
-              <div class="portfolio-caption text-left">
-                <h4>
-                  <a href="https://easykart.com.np/" rel="nofollow"
-                    >Easykart (Web, App & APIs)</a
-                  >
-                </h4>
-                <div class="work-tag">
-                  <p>Ecommerce</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item laravel">
-            <div class="portfolio-wrapper">
-              <div class="portfolio-thumb">
-                <img src="img/portfolio/vedyalay.png" alt="" />
-              </div>
-              <div class="portfolio-caption text-left">
-                <h4>
-                  <a href="https://github.com/vashukarn/vedalay" rel="nofollow"
-                    >Vedyalay</a
-                  >
-                </h4>
-                <div class="work-tag">
-                  <p>School Management System</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item laravel">
-            <div class="portfolio-wrapper">
-              <div class="portfolio-thumb">
-                <img src="img/portfolio/shreevahan.png" alt="" />
-              </div>
-              <div class="portfolio-caption text-left">
-                <h4>
-                  <a href="https://gurudai.com/" rel="nofollow"
-                    >Shreevahan</a
-                  >
-                </h4>
-                <div class="work-tag">
-                  <p>Ride Sharing App & Web</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item laravel">
-            <div class="portfolio-wrapper">
-              <div class="portfolio-thumb">
-                <img src="img/portfolio/greater-vision.png" alt="" />
-              </div>
-              <div class="portfolio-caption text-left">
-                <h4>
-                  <a href="https://greatervisionuae.com/" rel="nofollow"
-                    >Greater Vision UAE (Admin Panel)</a
-                  >
-                </h4>
-                <div class="work-tag">
-                  <p>Portfolio</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item android">
-            <div class="portfolio-wrapper">
-              <div class="portfolio-thumb">
-                <img src="img/portfolio/lotto.png" alt="" />
-              </div>
-              <div class="portfolio-caption text-left">
-                <h4>
-                  <a href="https://github.com/vashukarn/lotto"
-                    >Lotto (User & Admin App)</a
-                  >
-                </h4>
-                <div class="work-tag">
-                  <p>Lottery Trading</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item python">
-            <div class="portfolio-wrapper">
-              <div class="portfolio-thumb">
-                <img src="img/portfolio/insta-download.png" alt="" />
-              </div>
-              <div class="portfolio-caption text-left">
-                <h4>
-                  <a href="https://github.com/vashukarn/insta-downloader"
-                    >Insta Downloader</a
-                  >
-                </h4>
-                <div class="work-tag">
-                  <p>Python Selenium Script</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item python">
-            <div class="portfolio-wrapper">
-              <div class="portfolio-thumb">
-                <img src="img/portfolio/qr-code.png" alt="" />
-              </div>
-              <div class="portfolio-caption text-left">
-                <h4>
-                  <a
-                    href="https://github.com/vashukarn/automated-qr-code-generator"
-                    >QR Code Generator</a
-                  >
-                </h4>
-                <div class="work-tag">
-                  <p>Python Selenium Script</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item python">
-            <div class="portfolio-wrapper">
-              <div class="portfolio-thumb">
-                <img src="img/portfolio/insta-like.png" alt="" />
-              </div>
-              <div class="portfolio-caption text-left">
-                <h4>
-                  <a href="https://github.com/vashukarn/instagram-liker"
-                    >Instagram Liker</a
-                  >
-                </h4>
-                <div class="work-tag">
-                  <p>Python Selenium Script</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <footer>
-      <div class="basic-footer text-center ptb-90">
-        <div class="container">
-          <div class="footer-logo mb-30">
-            <h3><a href="index.html">Vashu Karn</a></h3>
-          </div>
-          <div class="social-icon">
-            <a href="https://github.com/vashukarn"><i class="ion-social-github"></i></a>
-            <a href="https://www.linkedin.com/in/vijay-karn-600ab4137/"><i class="ion-social-linkedin"></i></a>
-            <a href="https://www.facebook.com/vashu.karn.9"><i class="ion-social-facebook"></i></a>
-            <a href="https://www.instagram.com/vashukarn/"><i class="ion-social-instagram"></i></a>
-          </div>
-          <div class="footer-menu mt-30">
-            <nav>
-              <ul>
-                <li><a href="https://vashukarn.github.io/">Home</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="copyright mt-20">
-            <p>
-              Crafted with <3 by Vashu Karn | © Copyright <script>new Date().getFullYear() > 2020 && document.write(new Date().getFullYear());</script>. All Rights Reserved
+            <p class="hero__lede">
+              I architect and ship production systems across e-commerce,
+              healthcare, IoT, and real-time platforms. 6+ years of
+              PHP/Laravel, Flutter, and distributed systems — from greenfield
+              to scaled production.
             </p>
           </div>
         </div>
-      </div>
-    </footer>
-    <!-- footer end -->
 
-    <!-- All js plugins here -->
-    <script src="js/vendor/jquery-1.12.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.meanmenu.js"></script>
-    <script src="js/plugins.js"></script>
+        <svg class="hero__wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0 60 C 240 20, 480 80, 720 50 C 960 20, 1200 70, 1440 40 L 1440 80 L 0 80 Z" fill="#0a0a0a"/>
+        </svg>
+      </section>
+
+      <!-- ========== ABOUT ========== -->
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <div class="container">
+          <div class="section__head">
+            <span class="section__tag">···· About Me ····</span>
+            <h2 id="about-title" class="visually-hidden">About Vashu Karn</h2>
+          </div>
+
+          <div class="about__grid">
+            <div class="about__copy">
+              <p class="about__intro">
+                I'm a Senior Full Stack Engineer with a deep affection for
+                <em>well-architected</em> systems. I've led engineering teams of
+                up to <strong>10 engineers</strong> and owned end-to-end delivery of
+                microservice architectures, cross-platform mobile, IoT control
+                planes, and payments at production scale.
+              </p>
+              <p class="about__intro">
+                Currently building Talkative (Speech-Language Pathology) and a
+                self-service IoT dog-wash platform at Imaginovation. Previously
+                Technical Head at Alltechlabs, where I architected
+                <strong>GetDirect</strong> — a food-delivery price-comparison engine
+                serving 200+ Indian cities through ONDC.
+              </p>
+            </div>
+
+            <div class="about__panel">
+              <div class="about__row">
+                <span class="about__row-label">Name</span>
+                <span class="about__row-value">Vijay Ranjan Karn</span>
+              </div>
+              <div class="about__row">
+                <span class="about__row-label">Role</span>
+                <span class="about__row-value">Senior Full Stack Engineer</span>
+              </div>
+              <div class="about__row">
+                <span class="about__row-label">Based In</span>
+                <span class="about__row-value">Kathmandu, Nepal</span>
+              </div>
+              <div class="about__row">
+                <span class="about__row-label">Experience</span>
+                <span class="about__row-value">6+ Years</span>
+              </div>
+              <div class="about__row">
+                <span class="about__row-label">Email</span>
+                <span class="about__row-value"><a href="mailto:karnvashu@gmail.com">karnvashu@gmail.com</a></span>
+              </div>
+              <div class="about__row">
+                <span class="about__row-label">Phone</span>
+                <span class="about__row-value">+91 7070675425</span>
+              </div>
+              <div class="about__row">
+                <span class="about__row-label">Languages</span>
+                <span class="about__row-value">English · Hindi · Nepali</span>
+              </div>
+              <div class="about__row">
+                <span class="about__row-label">Status</span>
+                <span class="about__row-value about__row-value--accent"><span class="pulse"></span>Open to opportunities</span>
+              </div>
+              <div class="about__row">
+                <span class="about__row-label">Résumé</span>
+                <span class="about__row-value"><a href="Vijay_Karn_Resume.pdf" download>Download PDF&nbsp;↓</a></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="stats">
+            <div class="stats__item">
+              <span class="stats__value"><span class="stats__num" data-target="6">0</span><span class="stats__plus">+</span></span>
+              <span class="stats__label">Years building production systems</span>
+            </div>
+            <div class="stats__item">
+              <span class="stats__value"><span class="stats__num" data-target="14">0</span></span>
+              <span class="stats__label">Products shipped across web &amp; mobile</span>
+            </div>
+            <div class="stats__item">
+              <span class="stats__value"><span class="stats__num" data-target="10">0</span></span>
+              <span class="stats__label">Engineers led at peak team size</span>
+            </div>
+            <div class="stats__item">
+              <span class="stats__value"><span class="stats__num" data-target="200">0</span><span class="stats__plus">+</span></span>
+              <span class="stats__label">Cities served by GetDirect platform</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== MARQUEE ========== -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Laravel</span><span class="marquee__dot">●</span>
+          <span>Flutter</span><span class="marquee__dot">●</span>
+          <span>Livewire</span><span class="marquee__dot">●</span>
+          <span>Microservices</span><span class="marquee__dot">●</span>
+          <span>ONDC</span><span class="marquee__dot">●</span>
+          <span>MQTT / IoT</span><span class="marquee__dot">●</span>
+          <span>AWS</span><span class="marquee__dot">●</span>
+          <span>Firebase</span><span class="marquee__dot">●</span>
+          <span>Stripe</span><span class="marquee__dot">●</span>
+          <span>Razorpay</span><span class="marquee__dot">●</span>
+          <span>Typesense</span><span class="marquee__dot">●</span>
+          <span>Docker</span><span class="marquee__dot">●</span>
+          <span>Laravel</span><span class="marquee__dot">●</span>
+          <span>Flutter</span><span class="marquee__dot">●</span>
+          <span>Livewire</span><span class="marquee__dot">●</span>
+          <span>Microservices</span><span class="marquee__dot">●</span>
+          <span>ONDC</span><span class="marquee__dot">●</span>
+          <span>MQTT / IoT</span><span class="marquee__dot">●</span>
+          <span>AWS</span><span class="marquee__dot">●</span>
+          <span>Firebase</span><span class="marquee__dot">●</span>
+          <span>Stripe</span><span class="marquee__dot">●</span>
+          <span>Razorpay</span><span class="marquee__dot">●</span>
+          <span>Typesense</span><span class="marquee__dot">●</span>
+          <span>Docker</span><span class="marquee__dot">●</span>
+        </div>
+      </div>
+
+      <!-- ========== WORK / EXPERIENCE ========== -->
+      <section class="section work" id="work" aria-labelledby="work-title">
+        <div class="container">
+          <div class="section__head section__head--split">
+            <span class="section__tag">···· Work Experience ····</span>
+            <h2 id="work-title" class="section__title">
+              A career <em>journey</em><br/>across six<br/>engineering homes.
+            </h2>
+            <p class="section__sub">
+              From a junior Laravel role in Kathmandu to leading a 10-engineer
+              team, then architecting microservices and running engineering
+              for an India-wide marketplace — six roles, one through-line:
+              ship production systems that hold up.
+            </p>
+          </div>
+
+          <ol class="timeline">
+            <li class="timeline__item">
+              <div class="timeline__when">
+                <span class="timeline__year">Feb 2026 — Present</span>
+                <span class="timeline__loc">Remote</span>
+              </div>
+              <div class="timeline__body">
+                <h3 class="timeline__role">Senior Full Stack Engineer</h3>
+                <span class="timeline__org">Imaginovation</span>
+                <p>
+                  Owning end-to-end delivery of two products in parallel:
+                  <strong>Talkative</strong>, a multi-role Speech-Language
+                  Pathology portal on Laravel 13 + Livewire 4 with Spatie
+                  roles, activity-log audit, and S3 media; and
+                  <strong>Butt Rub &amp; Scrub</strong>, a self-service dog-wash
+                  IoT platform with MQTT/Nayax station control, Firebase OTP,
+                  Stripe subscriptions, and a Flutter companion app using
+                  Riverpod, Retrofit, and Google Maps.
+                </p>
+                <div class="timeline__tags">
+                  <span>Laravel 13</span><span>Livewire 4</span><span>MQTT</span><span>Stripe</span><span>Flutter</span><span>Riverpod</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="timeline__item">
+              <div class="timeline__when">
+                <span class="timeline__year">Feb 2023 — Feb 2026</span>
+                <span class="timeline__loc">Gurugram, IN</span>
+              </div>
+              <div class="timeline__body">
+                <h3 class="timeline__role">Technical Head</h3>
+                <span class="timeline__org">Alltechlabs Pvt. Ltd.</span>
+                <p>
+                  Architected <strong>GetDirect</strong> as a microservice
+                  suite — a live food-delivery price-comparison platform across
+                  200+ Indian cities. Chose Typesense for search, Ably for
+                  realtime, Razorpay for payments. Drove ONDC ecosystem
+                  integration (Buyer, Seller, Logistics) and built a
+                  price-comparison engine scraping Swiggy, Zomato, Magicpin,
+                  Uber Eats, and EatSure.
+                </p>
+                <div class="timeline__tags">
+                  <span>Microservices</span><span>ONDC</span><span>Typesense</span><span>Ably</span><span>Docker</span><span>Sentry</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="timeline__item">
+              <div class="timeline__when">
+                <span class="timeline__year">Feb 2022 — Feb 2023</span>
+                <span class="timeline__loc">Kathmandu, NP</span>
+              </div>
+              <div class="timeline__body">
+                <h3 class="timeline__role">Full Stack Developer</h3>
+                <span class="timeline__org">Uptechsys Pvt. Ltd.</span>
+                <p>
+                  Led a <strong>10-engineer team</strong> to deliver a Real
+                  Estate Trading platform with AWS Rekognition. Built an HR
+                  Management System with ZKTeco biometric integration and
+                  Hisaabkeeper accounting; delivered a multilingual Waste
+                  Management System with role-based access. Designed
+                  SEO-optimized school landing pages on Laravel Nova with
+                  Slack-webhook integrations.
+                </p>
+                <div class="timeline__tags">
+                  <span>Team Lead</span><span>AWS Rekognition</span><span>Laravel Nova</span><span>Biometrics</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="timeline__item">
+              <div class="timeline__when">
+                <span class="timeline__year">Jan 2021 — Feb 2022</span>
+                <span class="timeline__loc">Kathmandu, NP</span>
+              </div>
+              <div class="timeline__body">
+                <h3 class="timeline__role">Mid-Level PHP Developer</h3>
+                <span class="timeline__org">Peepal International Pvt. Ltd.</span>
+                <p>
+                  Designed microservice Admin / Customer / Seller dashboards
+                  for <strong>ePeepal</strong>, Nepal's multi-vendor
+                  marketplace. Drove a <strong>30% performance boost</strong>
+                  and <strong>40% downtime reduction</strong> via PWA, Redis,
+                  Laravel Horizon, and Laravel Nova. Stood up CI/CD on
+                  Bitbucket with Sentry and Slack integration; built
+                  SEO-optimized landing pages with international payment
+                  gateways.
+                </p>
+                <div class="timeline__tags">
+                  <span>Microservices</span><span>Redis</span><span>Horizon</span><span>PWA</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="timeline__item">
+              <div class="timeline__when">
+                <span class="timeline__year">Jun 2021 — Sept 2021</span>
+                <span class="timeline__loc">Kathmandu, NP · PT</span>
+              </div>
+              <div class="timeline__body">
+                <h3 class="timeline__role">Part-Time Laravel Developer</h3>
+                <span class="timeline__org">Zenlab Pvt. Ltd.</span>
+                <p>
+                  Built <strong>Digitalpalika</strong>, a multilingual
+                  eGovernance platform for civil registrations (Birth, Death,
+                  Migration, Marriage) deployed across local government
+                  bodies. Shipped <strong>NepoLive</strong>, a BigoLive-style
+                  live audio/video streaming app on Ant Media Server with
+                  wallet, gifts, credits, and ranking. Delivered the Mailo
+                  App backend for multi-restaurant management, farmers' eShop,
+                  and bakery delivery.
+                </p>
+                <div class="timeline__tags">
+                  <span>eGovernance</span><span>Ant Media</span><span>Streaming</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="timeline__item">
+              <div class="timeline__when">
+                <span class="timeline__year">Jun 2020 — Jan 2021</span>
+                <span class="timeline__loc">Kathmandu, NP</span>
+              </div>
+              <div class="timeline__body">
+                <h3 class="timeline__role">Junior Laravel Developer</h3>
+                <span class="timeline__org">Nectar Digit Pvt. Ltd.</span>
+                <p>
+                  Shipped <strong>Gurudai</strong> (formerly Shreevahan), a
+                  ride-sharing platform with rider/customer apps, heatmap APIs
+                  for geo-sorted dispatch, and a Cargo Air Logistics system.
+                  Optimized SQL and indexes for <strong>20× faster</strong>
+                  retrieval. Contributed to eNewspaper platforms (Aajakokhabar,
+                  CapitalNepal) and eShopping Nepal e-commerce.
+                </p>
+                <div class="timeline__tags">
+                  <span>Ride-sharing</span><span>SQL Optimization</span><span>Heatmaps</span>
+                </div>
+              </div>
+            </li>
+          </ol>
+
+          <div class="edu">
+            <span class="section__tag">···· Education ····</span>
+            <div class="edu__card">
+              <div>
+                <h3>B.Tech in Computer Science &amp; Engineering</h3>
+                <span>Sanskriti University</span>
+              </div>
+              <div class="edu__meta">
+                <span>2017 — 2021</span>
+                <span>CGPA · 8.1 / 10</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== SERVICES ========== -->
+      <section class="section services" id="services" aria-labelledby="services-title">
+        <div class="container">
+          <div class="section__head section__head--split">
+            <span class="section__tag">···· Services ····</span>
+            <h2 id="services-title" class="section__title">
+              I craft <em>reliable</em> systems<br/>
+              for the web, mobile, and<br/>
+              the things in between.
+            </h2>
+            <p class="section__sub">
+              I take products from a blank schema to production traffic —
+              owning architecture, backend, mobile, and the boring-but-vital
+              parts (CI/CD, observability, payments) that decide whether you
+              ship or stall.
+            </p>
+          </div>
+
+          <div class="services__grid">
+            <article class="service-card">
+              <div class="service-card__num">01</div>
+              <h3>Architecture &amp; Backend</h3>
+              <p>
+                Laravel monoliths, microservice suites, Composer-distributed
+                core packages, event-driven flows, and REST/GraphQL APIs.
+                Built for clarity and rebuild-ability — not for showing off.
+              </p>
+              <ul class="service-card__list">
+                <li>Laravel · Livewire · Node.js · Django</li>
+                <li>MySQL · PostgreSQL · Redis · MongoDB</li>
+                <li>Typesense · OpenSearch · Firestore</li>
+              </ul>
+            </article>
+
+            <article class="service-card">
+              <div class="service-card__num">02</div>
+              <h3>Cross-Platform Mobile</h3>
+              <p>
+                Production Flutter apps with bloc and Riverpod state, full
+                Firebase suite, payments, maps, deep links, and crash-free
+                observability. Live on iOS and Android in real markets.
+              </p>
+              <ul class="service-card__list">
+                <li>Flutter · Dart · flutter_bloc · Riverpod</li>
+                <li>FCM · Crashlytics · Sentry · Microsoft Clarity</li>
+                <li>Stripe · Razorpay · Khalti · eSewa</li>
+              </ul>
+            </article>
+
+            <article class="service-card">
+              <div class="service-card__num">03</div>
+              <h3>IoT &amp; Real-Time</h3>
+              <p>
+                MQTT-based device control, Nayax payment-station integration,
+                Ably/Pusher realtime channels, audiometric tone generation,
+                and Bluetooth medical-device connectivity.
+              </p>
+              <ul class="service-card__list">
+                <li>MQTT · Nayax · Ant Media · Bluetooth</li>
+                <li>Ably · Pusher · WebSockets</li>
+                <li>Firebase RTDB · Hardware-aware flows</li>
+              </ul>
+            </article>
+
+            <article class="service-card">
+              <div class="service-card__num">04</div>
+              <h3>DevOps &amp; Observability</h3>
+              <p>
+                Containerized services, automated deploys, and instrumentation
+                that surfaces problems before users do — so 3am pages become
+                rare instead of routine.
+              </p>
+              <ul class="service-card__list">
+                <li>Docker · Bitbucket Pipelines · Jenkins</li>
+                <li>Sentry · Laravel Pulse · Horizon</li>
+                <li>Slack alerting · AWS · GCP · DigitalOcean</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== INTEGRATIONS / STACK ========== -->
+      <section class="section integrations" id="stack" aria-labelledby="stack-title">
+        <div class="container">
+          <div class="section__head">
+            <span class="section__tag">···· Productivity Stack ····</span>
+            <h2 id="stack-title" class="section__title section__title--centered">
+              Tools I reach for, <em>daily</em>.
+            </h2>
+          </div>
+
+          <div class="stack-grid">
+            <div class="stack-cat">
+              <h4>Languages &amp; Frameworks</h4>
+              <div class="stack-chips">
+                <span>PHP</span><span>Laravel</span><span>Livewire</span><span>Dart</span><span>Flutter</span><span>Python</span><span>Django</span><span>Node.js</span><span>Next.js</span>
+              </div>
+            </div>
+            <div class="stack-cat">
+              <h4>Architecture &amp; Design</h4>
+              <div class="stack-chips">
+                <span>Microservices</span><span>Composer Packages</span><span>Event-driven</span><span>REST APIs</span><span>ONDC</span>
+              </div>
+            </div>
+            <div class="stack-cat">
+              <h4>Cloud &amp; Infrastructure</h4>
+              <div class="stack-chips">
+                <span>AWS EC2/S3/Lambda</span><span>GCP</span><span>Firebase</span><span>DigitalOcean</span><span>Docker</span><span>MQTT</span>
+              </div>
+            </div>
+            <div class="stack-cat">
+              <h4>Databases &amp; Search</h4>
+              <div class="stack-chips">
+                <span>MySQL</span><span>PostgreSQL</span><span>Redis</span><span>MongoDB</span><span>Typesense</span><span>OpenSearch</span><span>Firestore</span>
+              </div>
+            </div>
+            <div class="stack-cat">
+              <h4>DevOps &amp; Observability</h4>
+              <div class="stack-chips">
+                <span>Bitbucket Pipelines</span><span>Jenkins</span><span>Sentry</span><span>MS Clarity</span><span>Horizon</span><span>Pulse</span>
+              </div>
+            </div>
+            <div class="stack-cat">
+              <h4>Payments &amp; Realtime</h4>
+              <div class="stack-chips">
+                <span>Stripe</span><span>Razorpay</span><span>Khalti</span><span>eSewa</span><span>IMEPay</span><span>NICAsia CyberSource</span><span>Ably</span><span>Pusher</span>
+              </div>
+            </div>
+            <div class="stack-cat">
+              <h4>Mobile &amp; Tooling</h4>
+              <div class="stack-chips">
+                <span>flutter_bloc</span><span>Riverpod</span><span>JIRA</span><span>dompdf</span><span>TipTap</span><span>Spatie Suite</span><span>AWS Rekognition</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== PROJECTS — resume only ========== -->
+      <section class="section projects" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section__head section__head--split">
+            <span class="section__tag">···· Projects · Showcase ····</span>
+            <h2 id="projects-title" class="section__title">
+              User-centered <em>development</em> approach<br/>
+              enhances productivity and<br/>
+              drives revenue growth.
+            </h2>
+            <p class="section__sub">
+              Products and platforms I've architected or shipped — at
+              Imaginovation, Alltechlabs, Uptechsys, Peepal International,
+              Zenlab, and Nectar Digit — plus my own side projects and open
+              source.
+            </p>
+          </div>
+
+          <div class="filter-bar">
+            <button class="filter-btn is-active" data-filter="*">All</button>
+            <button class="filter-btn" data-filter=".cat-product">Current</button>
+            <button class="filter-btn" data-filter=".cat-side">Side Projects</button>
+            <button class="filter-btn" data-filter=".cat-past">Past Work</button>
+            <button class="filter-btn" data-filter=".cat-oss">Open Source</button>
+          </div>
+
+          <div class="projects__grid" id="projectsGrid">
+
+            <article class="project cat-product project--feature">
+              <div class="project__media">
+                <div class="project__placeholder project__placeholder--talkative">
+                  <span class="project__placeholder-label">Talkative</span>
+                  <span class="project__placeholder-sub">SLP Portal · Laravel 13 + Livewire 4</span>
+                </div>
+              </div>
+              <div class="project__body">
+                <div class="project__head">
+                  <h3>Talkative</h3>
+                  <span class="project__year">2026 · Imaginovation</span>
+                </div>
+                <p class="project__desc">Multi-role Speech-Language Pathology portal — therapists, patients, organizations, and admins from a single Laravel 13 + Livewire 4 codebase with Spatie roles, activity-log audit, S3 media, and a TipTap-based content module.</p>
+                <div class="project__tags"><span>Laravel 13</span><span>Livewire 4</span><span>Spatie</span><span>S3</span><span>TipTap</span></div>
+              </div>
+            </article>
+
+            <article class="project cat-product project--feature">
+              <div class="project__media">
+                <div class="project__placeholder project__placeholder--brs">
+                  <span class="project__placeholder-label">Butt Rub &amp; Scrub</span>
+                  <span class="project__placeholder-sub">IoT Dog-Wash · MQTT + Stripe</span>
+                </div>
+              </div>
+              <div class="project__body">
+                <div class="project__head">
+                  <h3>Butt Rub &amp; Scrub</h3>
+                  <span class="project__year">2026 · Imaginovation</span>
+                </div>
+                <p class="project__desc">Self-service dog-wash IoT platform — MQTT/Nayax station control, Firebase OTP, Stripe subscriptions, loyalty rewards, and a Flutter QR-access companion app with Riverpod, Retrofit, and Google Maps.</p>
+                <div class="project__tags"><span>MQTT</span><span>Nayax</span><span>Stripe</span><span>Flutter</span><span>Riverpod</span></div>
+              </div>
+            </article>
+
+            <article class="project cat-product project--feature">
+              <div class="project__media">
+                <div class="project__placeholder project__placeholder--gd">
+                  <span class="project__placeholder-label">GetDirect</span>
+                  <span class="project__placeholder-sub">Food Price Comparison · 200+ cities</span>
+                </div>
+              </div>
+              <div class="project__body">
+                <div class="project__head">
+                  <h3>GetDirect</h3>
+                  <span class="project__year">2023 — 2026 · Alltechlabs</span>
+                </div>
+                <p class="project__desc">Microservice suite (admin, seller, mobile API, analytics, comparison) with a Composer-distributed core package. Scrapes Swiggy, Zomato, Magicpin, Uber Eats &amp; EatSure; ONDC integrated; iOS &amp; Android Flutter app with flutter_bloc.</p>
+                <div class="project__tags"><span>Microservices</span><span>ONDC</span><span>Typesense</span><span>Ably</span><span>Razorpay</span></div>
+              </div>
+            </article>
+
+            <a href="https://vernalsounds.com" rel="nofollow noopener" target="_blank" class="project cat-side">
+              <div class="project__media">
+                <div class="project__placeholder project__placeholder--karn">
+                  <span class="project__placeholder-label">Karn Arogyam</span>
+                  <span class="project__placeholder-sub">Healthcare · Audiometry · Bluetooth</span>
+                </div>
+              </div>
+              <div class="project__body">
+                <div class="project__head">
+                  <h3>Karn Arogyam · Vernal Sounds</h3>
+                  <span class="project__year">Side Project</span>
+                </div>
+                <p class="project__desc">Healthcare technology — hearing-aid web platform and Flutter companion for tinnitus therapy, plus a patient app for audiometry with Bluetooth medical-device connectivity.</p>
+                <div class="project__tags"><span>Laravel 11</span><span>Flutter</span><span>Bluetooth</span><span>Razorpay</span></div>
+              </div>
+            </a>
+
+            <a href="https://sewasathi.com.np" rel="nofollow noopener" target="_blank" class="project cat-side">
+              <div class="project__media">
+                <div class="project__placeholder project__placeholder--sewa">
+                  <span class="project__placeholder-label">Sewa Sathi</span>
+                  <span class="project__placeholder-sub">Home Services · Nepal</span>
+                </div>
+              </div>
+              <div class="project__body">
+                <div class="project__head">
+                  <h3>Sewa Sathi</h3>
+                  <span class="project__year">Side Project</span>
+                </div>
+                <p class="project__desc">Home-services marketplace for Nepal — plumbing, electrical, cleaning, and salon — with Laravel 12 backend, Flutter customer + partner apps, Khalti/Razorpay payments, Sparrow SMS OTP, and Pusher real-time dispatch.</p>
+                <div class="project__tags"><span>Laravel 12</span><span>Flutter</span><span>Khalti</span><span>Pusher</span></div>
+              </div>
+            </a>
+
+            <a href="https://allezsportz.com" rel="nofollow noopener" target="_blank" class="project cat-side">
+              <div class="project__media">
+                <div class="project__placeholder project__placeholder--allez">
+                  <span class="project__placeholder-label">AllezSportz</span>
+                  <span class="project__placeholder-sub">Sports Marketplace · India</span>
+                </div>
+              </div>
+              <div class="project__body">
+                <div class="project__head">
+                  <h3>AllezSportz</h3>
+                  <span class="project__year">Side Project</span>
+                </div>
+                <p class="project__desc">India's sports training marketplace — Laravel + Flutter on iOS &amp; Android. Connects athletes, coaches, and sponsors across 6+ sports: booking, tournaments, verified athlete sponsorship, and equipment commerce.</p>
+                <div class="project__tags"><span>Laravel</span><span>Flutter</span><span>iOS · Android</span></div>
+              </div>
+            </a>
+
+            <article class="project cat-past">
+              <div class="project__media">
+                <div class="project__placeholder project__placeholder--epeepal">
+                  <span class="project__placeholder-label">ePeepal</span>
+                  <span class="project__placeholder-sub">Multi-vendor Marketplace · Nepal</span>
+                </div>
+              </div>
+              <div class="project__body">
+                <div class="project__head">
+                  <h3>ePeepal</h3>
+                  <span class="project__year">2021 — 2022 · Peepal</span>
+                </div>
+                <p class="project__desc">Nepal's mass-market multi-vendor e-commerce marketplace — microservice Admin / Customer / Seller dashboards. Drove 30% performance boost and 40% downtime reduction via PWA, Redis, Laravel Horizon &amp; Nova.</p>
+                <div class="project__tags"><span>Microservices</span><span>Redis</span><span>Horizon</span><span>Nova</span></div>
+              </div>
+            </article>
+
+            <article class="project cat-past">
+              <div class="project__media">
+                <div class="project__placeholder project__placeholder--gurudai">
+                  <span class="project__placeholder-label">Gurudai</span>
+                  <span class="project__placeholder-sub">Ride-sharing · Heatmap Dispatch</span>
+                </div>
+              </div>
+              <div class="project__body">
+                <div class="project__head">
+                  <h3>Gurudai · Shreevahan</h3>
+                  <span class="project__year">2020 · Nectar Digit</span>
+                </div>
+                <p class="project__desc">Ride-sharing platform with rider and customer apps, heatmap APIs for geo-sorted dispatch, and a Cargo Air Logistics Management System. 20× SQL retrieval speedup via index and structure optimization.</p>
+                <div class="project__tags"><span>Ride-sharing</span><span>Heatmaps</span><span>SQL</span></div>
+              </div>
+            </article>
+
+            <article class="project cat-past">
+              <div class="project__media">
+                <div class="project__placeholder project__placeholder--digitalpalika">
+                  <span class="project__placeholder-label">Digitalpalika</span>
+                  <span class="project__placeholder-sub">eGovernance · Nepal</span>
+                </div>
+              </div>
+              <div class="project__body">
+                <div class="project__head">
+                  <h3>Digitalpalika</h3>
+                  <span class="project__year">2021 · Zenlab</span>
+                </div>
+                <p class="project__desc">Multilingual eGovernance platform for civil registrations (Birth, Death, Migration, Marriage) deployed across local government bodies in Nepal.</p>
+                <div class="project__tags"><span>eGovernance</span><span>Multilingual</span></div>
+              </div>
+            </article>
+
+            <article class="project cat-past">
+              <div class="project__media">
+                <div class="project__placeholder project__placeholder--nepolive">
+                  <span class="project__placeholder-label">NepoLive</span>
+                  <span class="project__placeholder-sub">Live Streaming · Ant Media</span>
+                </div>
+              </div>
+              <div class="project__body">
+                <div class="project__head">
+                  <h3>NepoLive</h3>
+                  <span class="project__year">2021 · Zenlab</span>
+                </div>
+                <p class="project__desc">BigoLive-style live audio/video streaming app for Nepal — wallet, gifts, credits, and ranking systems on Ant Media Server.</p>
+                <div class="project__tags"><span>Ant Media</span><span>Streaming</span><span>Realtime</span></div>
+              </div>
+            </article>
+
+            <article class="project cat-past">
+              <div class="project__media">
+                <div class="project__placeholder project__placeholder--realestate">
+                  <span class="project__placeholder-label">Real Estate Trading</span>
+                  <span class="project__placeholder-sub">AWS Rekognition</span>
+                </div>
+              </div>
+              <div class="project__body">
+                <div class="project__head">
+                  <h3>Real Estate Trading Platform</h3>
+                  <span class="project__year">2022 · Uptechsys</span>
+                </div>
+                <p class="project__desc">Led a 10-engineer team to deliver an AI-assisted real-estate trading platform with AWS Rekognition integration; shipped on time with seamless deployment.</p>
+                <div class="project__tags"><span>Team Lead</span><span>AWS Rekognition</span><span>Laravel</span></div>
+              </div>
+            </article>
+
+            <article class="project cat-past">
+              <div class="project__media">
+                <div class="project__placeholder project__placeholder--hrm">
+                  <span class="project__placeholder-label">HR Management</span>
+                  <span class="project__placeholder-sub">ZKTeco Biometrics</span>
+                </div>
+              </div>
+              <div class="project__body">
+                <div class="project__head">
+                  <h3>HR Management System</h3>
+                  <span class="project__year">2022 · Uptechsys</span>
+                </div>
+                <p class="project__desc">Built an HR Management System with ZKTeco biometric device integration and Hisaabkeeper accounting; multilingual Waste Management System with role-based access.</p>
+                <div class="project__tags"><span>Biometrics</span><span>Hisaabkeeper</span><span>RBAC</span></div>
+              </div>
+            </article>
+
+            <article class="project cat-oss">
+              <div class="project__media">
+                <div class="project__placeholder project__placeholder--sg">
+                  <span class="project__placeholder-label">Sound Generator</span>
+                  <span class="project__placeholder-sub">Flutter Package · Open Source</span>
+                </div>
+              </div>
+              <div class="project__body">
+                <div class="project__head">
+                  <h3>Sound Generator for Flutter</h3>
+                  <span class="project__year">Open Source</span>
+                </div>
+                <p class="project__desc">Authored and maintain. Now used in production for the Karn Arogyam audiometry module — drives clinical-grade tone generation in the patient app.</p>
+                <div class="project__tags"><span>Flutter</span><span>Audio</span><span>OSS</span></div>
+              </div>
+            </article>
+
+            <article class="project cat-oss">
+              <div class="project__media">
+                <div class="project__placeholder project__placeholder--bie">
+                  <span class="project__placeholder-label">Bing Image Extractor</span>
+                  <span class="project__placeholder-sub">Laravel Package · Open Source</span>
+                </div>
+              </div>
+              <div class="project__body">
+                <div class="project__head">
+                  <h3>Bing Image Extractor</h3>
+                  <span class="project__year">Open Source</span>
+                </div>
+                <p class="project__desc">Authored and published Composer package for programmatic Bing image lookups in Laravel apps.</p>
+                <div class="project__tags"><span>Laravel</span><span>Composer</span><span>OSS</span></div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== RECOGNITIONS / LEADERSHIP ========== -->
+      <section class="section recognitions" aria-labelledby="recog-title">
+        <div class="container">
+          <div class="section__head">
+            <span class="section__tag">···· Leadership &amp; Recognition ····</span>
+            <h2 id="recog-title" class="visually-hidden">Leadership, Open Source &amp; Certifications</h2>
+          </div>
+
+          <div class="recog__grid">
+            <article class="recog-card">
+              <span class="recog-card__kind">Leadership</span>
+              <h3>Engineering Leadership</h3>
+              <p>Led a 10-engineer team at Uptechsys; held Technical Head responsibilities at Alltechlabs spanning architecture, code review, hiring input, and technology selection.</p>
+            </article>
+
+            <article class="recog-card">
+              <span class="recog-card__kind">Community</span>
+              <h3>Head Co-ordinator · GOFCA</h3>
+              <p>Ground Zero Forum for Computer Application at Sanskriti University (200+ members). Drove 50% growth in participation. Organizer and Co-director of the 1st GOFCA Hackathon (2018).</p>
+            </article>
+
+            <article class="recog-card">
+              <span class="recog-card__kind">Open Source</span>
+              <h3>Sound Generator &amp; Bing Image Extractor</h3>
+              <p>Maintained Sound Generator for Flutter (used in production at Karn Arogyam); authored and published Bing Image Extractor for Laravel.</p>
+            </article>
+
+            <article class="recog-card">
+              <span class="recog-card__kind">Certifications</span>
+              <h3>Backend &amp; DevOps</h3>
+              <p>GitHub Actions for CI/CD · Linux Command Line · Build Laravel Apps Fast with Blueprint · AWS S3 · Oracle Database Foundations.</p>
+            </article>
+
+            <article class="recog-card">
+              <span class="recog-card__kind">Certifications</span>
+              <h3>Mobile &amp; Languages</h3>
+              <p>Getting Started with Flutter Development · Crash Course on Python · 100 Days of Code Python Pro Bootcamp.</p>
+            </article>
+
+            <article class="recog-card">
+              <span class="recog-card__kind">Certifications</span>
+              <h3>Process &amp; Business</h3>
+              <p>Agile with Atlassian Jira · Foundations of Digital Marketing &amp; E-commerce. (Udemy, Coursera — 2022-2024)</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== CONTACT ========== -->
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <div class="contact__head">
+            <span class="section__tag">···· Contact ····</span>
+            <h2 id="contact-title" class="contact__title">
+              I am eager to <em>connect</em> with you<br/>
+              and hear your thoughts.
+            </h2>
+          </div>
+
+          <div class="contact__grid">
+            <a href="mailto:karnvashu@gmail.com" class="contact__primary">
+              <span>Let's start a conversation</span>
+              <span class="contact__primary-email">karnvashu@gmail.com</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+            </a>
+
+            <div class="contact__info">
+              <div class="contact__row">
+                <span class="contact__row-label">Phone</span>
+                <a href="tel:+917070675425">+91 7070675425</a>
+              </div>
+              <div class="contact__row">
+                <span class="contact__row-label">Location</span>
+                <span>Kathmandu, Nepal</span>
+              </div>
+              <div class="contact__row">
+                <span class="contact__row-label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/karnvashu/" target="_blank" rel="noopener">/in/karnvashu</a>
+              </div>
+              <div class="contact__row">
+                <span class="contact__row-label">GitHub</span>
+                <a href="https://github.com/vashukarn" target="_blank" rel="noopener">/vashukarn</a>
+              </div>
+              <div class="contact__row">
+                <span class="contact__row-label">Résumé</span>
+                <a href="Vijay_Karn_Resume.pdf" download>Download PDF&nbsp;↓</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="thanks">
+        <div class="container">
+          <div class="thanks__row">
+            <div class="thanks__dots" aria-hidden="true">●●●</div>
+            <h2 class="thanks__title">
+              <span>Thank you</span>
+              <span class="thanks__title--serif">for watching</span>
+            </h2>
+          </div>
+
+          <div class="thanks__meta">
+            <div>
+              <span class="thanks__label">Senior Full Stack Engineer</span>
+              <span class="thanks__sub">— Vashu Karn</span>
+            </div>
+            <div class="thanks__center">
+              <span class="thanks__label">Kathmandu, Nepal</span>
+              <span class="thanks__sub">Open to remote roles worldwide</span>
+            </div>
+            <div class="thanks__right">
+              <span class="thanks__label">vashukarn.github.io</span>
+              <span class="thanks__sub">© <span id="year"></span> Vijay Karn · All rights reserved</span>
+            </div>
+          </div>
+
+          <div class="thanks__socials" aria-label="Social links">
+            <a href="https://github.com/vashukarn" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12 11.5 11.5 0 0 0 8.4 22.9c.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.6-1.3-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.7 2.7 1.2 3.4.9.1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.2-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/karnvashu/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2zM8 19H5V9h3v10zM6.5 7.7a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4zM19 19h-3v-5.2c0-1.2 0-2.7-1.7-2.7s-1.9 1.3-1.9 2.6V19h-3V9h2.8v1.4h.1a3.1 3.1 0 0 1 2.8-1.5c3 0 3.6 2 3.6 4.5V19z"/></svg>
+            </a>
+            <a href="mailto:karnvashu@gmail.com" aria-label="Email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 6h18v12H3z"/><path d="m3 7 9 7 9-7"/></svg>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <button id="scrollTop" class="scroll-top" aria-label="Back to top">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 19V5m0 0-7 7m7-7 7 7"/></svg>
+    </button>
+
     <script src="js/main.js"></script>
   </body>
 </html>
