@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vashukarn.github.io/sitemap.xml
+Sitemap: https://vijaykarn.com.np/sitemap.xml
