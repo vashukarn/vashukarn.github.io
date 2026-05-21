@@ -37,11 +37,17 @@
     <link rel="icon" href="img/favicon.png" />
     <link rel="apple-touch-icon" href="img/favicon.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <!-- Self-hosted fonts: zero third-party DNS, preload the two used above the fold -->
+    <link rel="preload" as="font" type="font/woff2" href="fonts/Inter-VariableFont.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="fonts/InstrumentSerif-Italic.woff2" crossorigin />
 
     <link rel="stylesheet" href="style.css" />
+
+    <!-- rel=me identity verification chain (Mastodon / Indieweb) -->
+    <link rel="me" href="https://github.com/vashukarn" />
+    <link rel="me" href="https://www.linkedin.com/in/karnvashu/" />
+    <link rel="me" href="mailto:karnvashu@gmail.com" />
+    <link rel="author" href="/humans.txt" type="text/plain" />
 
     <!-- JSON-LD: Person -->
     <script type="application/ld+json">
@@ -196,6 +202,54 @@
           }
         }
       ]
+    }
+    </script>
+
+    <!-- JSON-LD: SoftwareApplication — Sound Generator -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Sound Generator for Flutter",
+      "description": "Flutter package for generating clinical-grade audiometric tones. Used in production for the Karn Arogyam audiometry patient app.",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "iOS, Android, Web",
+      "programmingLanguage": "Dart",
+      "url": "https://pub.dev/packages/sound_generator",
+      "author": {
+        "@type": "Person",
+        "name": "Vijay Ranjan Karn",
+        "url": "https://vijaykarn.com.np/"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+
+    <!-- JSON-LD: SoftwareApplication — Bing Image Extractor -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Bing Image Extractor for Laravel",
+      "description": "Composer package for programmatic Bing image lookups in Laravel applications.",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Cross-platform",
+      "programmingLanguage": "PHP",
+      "url": "https://packagist.org/packages/vashukarn/bing-image-extractor",
+      "author": {
+        "@type": "Person",
+        "name": "Vijay Ranjan Karn",
+        "url": "https://vijaykarn.com.np/"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
     }
     </script>
 

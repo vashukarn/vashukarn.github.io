@@ -1,0 +1,7 @@
+# RFC 9116 — security contact for this domain
+# https://www.rfc-editor.org/rfc/rfc9116
+
+Contact: mailto:karnvashu@gmail.com
+Expires: 2027-12-31T23:59:00.000Z
+Preferred-Languages: en
+Canonical: https://vijaykarn.com.np/.well-known/security.txt

@@ -1,0 +1,35 @@
+/* TEAM */
+
+  Senior Full Stack Engineer: Vijay "Vashu" Karn
+  Site:    https://vijaykarn.com.np
+  Email:   karnvashu@gmail.com
+  GitHub:  @vashukarn
+  Twitter: —
+  Mastodon: —
+  Location: Kathmandu, Nepal
+
+/* THANKS */
+
+  To the open source maintainers behind every package this site
+  doesn't actually need but my professional life depends on:
+  Laravel, Flutter, Spatie, Symfony, the Rust toolchain that
+  rebuilt half the JS ecosystem, and the people writing READMEs
+  at 1am so the rest of us don't have to read the source.
+
+/* SITE */
+
+  Last update:    2026/05/20
+  Standards:      HTML5, CSS3 (custom properties), vanilla JS
+  Components:     One page. Pretty old-school.
+  Software:       VS Code, PHPStorm, neovim when feeling brave
+  Hosting:        GitHub Pages
+  Domain:         vijaykarn.com.np
+  Typography:     Instrument Serif + Inter + JetBrains Mono
+                  (all self-hosted, no third-party DNS)
+
+                       __  ___          __
+                      /  |/  /__  ___  / /____ ____  ___
+                     / /|_/ / _ \/ _ \/ __/ _ `/ _ \(_-<
+                    /_/  /_/\___/_//_/\__/\_,_/_//_/___/
+
+  Want to chat? karnvashu@gmail.com  ·  cal.com/vashu-karn
