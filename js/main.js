@@ -176,6 +176,35 @@
   }, { rootMargin: '-40% 0px -55% 0px' });
   sections.forEach(s => navObserver.observe(s));
 
+  /* ---------- Copy-to-clipboard for OSS install snippets ---------- */
+  document.querySelectorAll('.oss-card__copy').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      const targetId = btn.dataset.copyTarget;
+      const target   = targetId && document.getElementById(targetId);
+      if (!target) return;
+      const text = target.textContent.trim();
+      try {
+        await navigator.clipboard.writeText(text);
+      } catch {
+        // Fallback for older browsers / non-secure contexts
+        const ta = document.createElement('textarea');
+        ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); } catch {}
+        document.body.removeChild(ta);
+      }
+      btn.classList.add('is-copied');
+      const label = btn.querySelector('.oss-card__copy-label');
+      const original = label && label.textContent;
+      if (label) label.textContent = 'Cop';   // CSS appends "ied!" via .is-copied
+      setTimeout(() => {
+        btn.classList.remove('is-copied');
+        if (label && original) label.textContent = original;
+      }, 1600);
+    });
+  });
+
   /* ---------- Init ---------- */
   onScroll();
 })();
