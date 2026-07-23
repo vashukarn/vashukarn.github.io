@@ -755,7 +755,6 @@ a.project { color: inherit; text-decoration: none; }
 .project__placeholder--hrm          { background: linear-gradient(135deg, #1a2a22, #0a110d); }
 .project__placeholder--sg           { background: linear-gradient(135deg, #2a2018, #11100a); }
 .project__placeholder--bie          { background: linear-gradient(135deg, #181a2a, #0a0b11); }
-.project__placeholder--karn         { background: linear-gradient(135deg, #1c2c2a, #0a1413); }
 .project__placeholder--epeepal      { background: linear-gradient(135deg, #2a1a26, #110a10); }
 .project__placeholder--gurudai      { background: linear-gradient(135deg, #18222e, #080d11); }
 
