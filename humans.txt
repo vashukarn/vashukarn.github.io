@@ -2,7 +2,7 @@
 
   Senior Full Stack Engineer: Vijay "Vashu" Karn
   Site:    https://vijaykarn.com.np
-  Email:   karnvashu@gmail.com
+  Email:   itsvashukarn@gmail.com
   GitHub:  @vashukarn
   Twitter: —
   Mastodon: —
@@ -32,4 +32,4 @@
                      / /|_/ / _ \/ _ \/ __/ _ `/ _ \(_-<
                     /_/  /_/\___/_//_/\__/\_,_/_//_/___/
 
-  Want to chat? karnvashu@gmail.com  ·  cal.com/vashu-karn
+  Want to chat? itsvashukarn@gmail.com  ·  cal.com/vashu-karn
