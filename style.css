@@ -762,6 +762,8 @@ a.project { color: inherit; text-decoration: none; }
 .project__placeholder--karn         { background: linear-gradient(135deg, #1c2c2a, #0a1413); }
 .project__placeholder--epeepal      { background: linear-gradient(135deg, #2a1a26, #110a10); }
 .project__placeholder--gurudai      { background: linear-gradient(135deg, #18222e, #080d11); }
+.project__placeholder--bbd          { background: linear-gradient(135deg, #1a2a26, #0a110f); }
+.project__placeholder--unipath      { background: linear-gradient(135deg, #1a1e2e, #0a0c13); }
 
 .project__body { padding: 22px 24px 26px; }
 .project__head {
